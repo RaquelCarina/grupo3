@@ -1,4 +1,5 @@
 import sys
+import os
 
 tabuleiro = [
     [" ", " ", " "],
@@ -56,6 +57,8 @@ def jogo_x():
 
         jogada_x()
 
+        os.system('cls')
+
         exibir_tabuleiro()
 
         if verifica_vencedor():
@@ -63,8 +66,11 @@ def jogo_x():
 
         jogada_o()
 
+        os.system('cls')
+
         if verifica_vencedor():
             return
+        
 
 def jogo_o():
     for i in range(9):
@@ -72,12 +78,16 @@ def jogo_o():
 
         jogada_o()
 
+        os.system('cls')
+
         exibir_tabuleiro()
 
         if verifica_vencedor():
             return
 
         jogada_x()
+
+        os.system('cls')
         
         if verifica_vencedor():
             return

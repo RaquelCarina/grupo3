@@ -35,10 +35,8 @@ def exibir_tabuleiro():
     print("Dicas: \n")
     print("1 - Fruta de cor roxa")
     print("2 - Sistema de saúde do Brasil")
-    print("3 - Meio de transporte aéreo")
-    print("4 - Veículo de quatro rodas")
-    print("5 - Usado em vários esportes e tem formato esférico")
-    print("6 - Brinquedo que representa um ser humano do sexo feminino")
+    print("3 - Veículo de quatro rodas")
+    print("4 - Brinquedo que representa um ser humano do sexo feminino")
 
     print("\nTabuleiro:")
     print("   1  2  3  4  5  6  7")
@@ -55,30 +53,20 @@ def jogada():
         return
 
     if escolha == "uva":
-        tabuleiro[0][0] = "u"
-        tabuleiro[0][1] = "v"
-        tabuleiro[0][2] = "a"
+        tabuleiro[0][4] = "u"
+        tabuleiro[1][4] = "v"
+        tabuleiro[2][4] = "a"
     elif escolha == "sus":
         tabuleiro[0][3] = "s"
         tabuleiro[0][4] = "u"
         tabuleiro[0][5] = "s"
-    elif escolha == "avião":
-        tabuleiro[1][0] = "a"
-        tabuleiro[1][1] = "v"
-        tabuleiro[1][2] = "i"
-        tabuleiro[1][3] = "ã"
-        tabuleiro[1][4] = "o"
     elif escolha == "carro":
-        tabuleiro[2][0] = "c"
-        tabuleiro[2][1] = "a"
-        tabuleiro[2][2] = "r"
-        tabuleiro[2][3] = "r"
-        tabuleiro[2][4] = "o"
-    elif escolha == "bola":
-        tabuleiro[3][0] = "b"
-        tabuleiro[3][1] = "o"
-        tabuleiro[3][2] = "l"
-        tabuleiro[3][3] = "a"
+        tabuleiro[0][1] = "c"
+        tabuleiro[1][1] = "a"
+        tabuleiro[2][1] = "r"
+        tabuleiro[3][1] = "r"
+        tabuleiro[4][1] = "o"
+
     elif escolha == "boneca":
         tabuleiro[4][0] = "b"
         tabuleiro[4][1] = "o"
